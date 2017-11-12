@@ -1,0 +1,5 @@
+# Custom gitignore file for Django
+
+# Pycache
+__pycache__/
+*.pyc
