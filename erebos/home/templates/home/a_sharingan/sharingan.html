@@ -1,3 +1,4 @@
+{% load wagtailcore_tags %}
 {% block sharingan %}
 <article id="projekte" class="sharingan">
   <section id="ts3.party" class="sharingan-s sharingan-1">
@@ -8,16 +9,7 @@
         </div>
       </div>
       <div class="lorem">
-        <h3>Ts3.Party</h3>
-        <p>
-          Our Teamspeak is divided into East, West-Europe, and USA. So that everyone in Europe and some people from USA can fully enjoy our Teamspeak environment. The TS environment includes various special commands, ranks and some special shit what will come soon.
-        </p>
-        <p>
-          The word of a Kami or a Butterfly is a law and must not fade out into oblivion. Kami is the owner rank of the TS and butterfly is our Subadmin, this people won't be malicious persons.
-        </p>
-        <p>
-          Spamming is strictly prohibited, don't follow the rule and you will be teamspeakless.
-        </p>
+        {{ page.sh1|richtext }}
       </div>
     </div>
   </section>
@@ -29,10 +21,7 @@
         </div>
       </div>
       <div class="lorem">
-        <h3>Nize.Host</h3>
-        <p>
-          Is our cloud and website space for Developer, there we work with other Devs and showcase our projects. If you want to work with us there you don't have to be a pro, but you should have interest in good code.
-        </p>
+        {{ page.sh2|richtext }}
       </div>
     </div>
   </section>
@@ -44,17 +33,13 @@
         </div>
       </div>
       <div class="lorem">
-        <h3>Chat.Erebos</h3>
-        <p>
-          Is a Telegramchat where we write with other people about various things. We are open for new groups for other topics, just inform a Kami for new topics you want to discuss with other people. The rules for these chats are simple, write what you want, the answers will be accordingly.
-        </p>
-      </div>
+        {{ page.sh3|richtext }}
     </div>
   </section>
   <section id="theteam" class="sharingan-s theteam-s">
     <header class="nyan">
       <a class="nyanlink" href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
-        <h2>The Team</h2>
+        <h2>{{ page.nyan }}</h2>
         <img src="https://erebos.xyz/PIC/nyan.gif" alt="nyan">
       </a>
       <audio id="nyanaudio" preload="auto">
