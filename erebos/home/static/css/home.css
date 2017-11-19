@@ -660,7 +660,6 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
   animation: nyan-background 1000ms linear infinite; }
 
 .gallery {
-  display: none;
   background-color: grey; }
 
 .gallery-h {
@@ -685,7 +684,7 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
 
 /*section*spaceship-s****************************************************************************************************/
 .spaceship-s {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,5 @@
 {% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
 {% block sharingan %}
 <article id="projekte" class="sharingan">
   <section id="ts3.party" class="sharingan-s sharingan-1">
@@ -9,7 +10,7 @@
         </div>
       </div>
       <div class="lorem">
-        {{ page.sh1|richtext }}
+        {{ a.value.sharingan.sharingan_1|richtext }}
       </div>
     </div>
   </section>
@@ -21,7 +22,7 @@
         </div>
       </div>
       <div class="lorem">
-        {{ page.sh2|richtext }}
+        {{ a.value.sharingan.sharingan_2|richtext }}
       </div>
     </div>
   </section>
@@ -33,13 +34,14 @@
         </div>
       </div>
       <div class="lorem">
-        {{ page.sh3|richtext }}
+        {{ a.value.sharingan.sharingan_3|richtext }}
     </div>
   </section>
+  {% if a.value.sharingan.show_team %}
   <section id="theteam" class="sharingan-s theteam-s">
     <header class="nyan">
       <a class="nyanlink" href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
-        <h2>{{ page.nyan }}</h2>
+        <h2>{{ a.value.sharingan.nyan_titel }}</h2>
         <img src="https://erebos.xyz/PIC/nyan.gif" alt="nyan">
       </a>
       <audio id="nyanaudio" preload="auto">
@@ -48,55 +50,19 @@
       </audio>
     </header>
     <article class="members">
-      <div class="member">
-        <div class="pic">
-          <img src="https://erebos.xyz/PIC/suppi.jpg" alt="suppi">
+      {% for member in a.value.sharingan.team %}
+        <div class="member">
+          <div class="pic">
+            {% image member.value.pic original alt="suppi" %}
+          </div>
+          <div class="info">
+            <h2>{{ member.value.name }}</h2>
+            <p>{{ member.value.description }}</p>
+          </div>
         </div>
-        <div class="info">
-          <h2>suppi</h2>
-          <p>Minecraft Mod Developer, Leading Java Developer and LOL Player</p>
-        </div>
-      </div>
-      <div class="member">
-        <div class="pic">
-          <img src="https://erebos.xyz/PIC/kami.jpg" alt="kami">
-        </div>
-        <div class="info">
-          <h2>kami</h2>
-          <p>Teamspeak Kami, Leading OSU! Player, Hunter, Designer, and Translator</p>
-        </div>
-      </div>
-      <div class="member">
-        <div class="pic">
-          <img src="https://erebos.xyz/PIC/toko.jpg" alt="toko">
-        </div>
-        <div class="info">
-          <h2>archer</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-        </div>
-      </div>
-      <div class="member">
-        <div class="pic">
-          <img src="https://erebos.xyz/PIC/chris.jpg" alt="chris">
-        </div>
-        <div class="info">
-          <h2>chris</h2>
-          <p>Teamspeak DJ, Microsoft Security Advisor and Leading .net Developer</p>
-        </div>
-      </div>
-      <div class="member">
-        <div class="pic">
-          <img src="https://erebos.xyz/PIC/sahara.jpg" alt="sahara">
-        </div>
-        <div class="info">
-          <h2>sahara</h2>
-          <p>Representative of the women's rights and Leading female Teamspeak Admin</p>
-        </div>
-      </div>
+      {% endfor %}
     </article>
-    <a href="http://s576.photobucket.com/user/NS_Urmania/media/rainbow_dash_salute_by_atomicgreymon-d3bo0dx.png.html" target="_blank">
-      <img class="pony" src="http://i576.photobucket.com/albums/ss205/NS_Urmania/rainbow_dash_salute_by_atomicgreymon-d3bo0dx.png" alt=" photo rainbow_dash_salute_by_atomicgreymon-d3bo0dx">
-    </a>
   </section>
+{% endif %}
 </article>
 {% endblock %}
