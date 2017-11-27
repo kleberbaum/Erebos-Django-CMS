@@ -27,7 +27,9 @@
 <header class="site-header">
   {% include "home/h_navtop/navtop.html" %}
   {% for h in page.header %}
-    {% if h.block_type == 'hbanner' %}
+    {% if h.block_type == 'hfull' %}
+      {% include "home/h_full/full.html" %}
+    {% elif h.block_type == 'hbanner' %}
       {% include "home/h_banner/banner.html" %}
     {% endif %}
   {% endfor %}

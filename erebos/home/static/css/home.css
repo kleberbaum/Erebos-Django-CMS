@@ -32,10 +32,14 @@ h1 {
 h2 {
   font-family: "Noto Sans";
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 4em;
   letter-spacing: 0.6em;
   padding-left: 0.6em;
-  color: white; }
+  color: white;
+  background: url(https://erebos.xyz/PIC/kreide.png);
+  background-size: 21px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 h3 {
   font-size: 1.2em;
@@ -243,6 +247,36 @@ footer {
   height: 16.6vw;
   background-color: rgba(255, 255, 255, 0.9); }
 
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  height: 100%; }
+
+.full {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.63); }
+  .full .titlecontainer {
+    margin-bottom: calc(32.1px + 1em); }
+
+.f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  height: 100%; }
+  .f .eule {
+    margin-top: 150px; }
+  .f .kroko {
+    margin-top: 390px; }
+
 .creativetitlecontainer {
   z-index: 0;
   border-radius: 100%;
@@ -277,12 +311,6 @@ footer {
 #seal {
   width: 150px;
   height: 150px; }
-
-.b {
-  justify-content: center;
-  align-items: center;
-  min-width: 300px;
-  height: 100%; }
 
 /*viewport***************************************************************************************************************/
 @media only screen and (max-width: 1440px) {
@@ -381,6 +409,7 @@ article input {
   justify-content: center;
   align-items: center;
   border-color: transparent;
+  background-color: #dedede;
   user-select: none;
   background-image: url(https://erebos.xyz/PIC/grid16.png); }
   .triangulum * {
@@ -476,7 +505,7 @@ article input {
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.8); }
 
-input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, input#about-2:checked + .about-s .oculus .oculus-nav-dots label#about-dot-2, input#about-3:checked + .about-s .oculus .oculus-nav-dots label#about-dot-3, input#about-4:checked + .about-s .oculus .oculus-nav-dots label#about-dot-4, input#about-5:checked + .about-s .oculus .oculus-nav-dots label#about-dot-5, input#about-6:checked + .about-s .oculus .oculus-nav-dots label#about-dot-6 {
+input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, input#about-2:checked + .about-s .oculus .oculus-nav-dots label#about-dot-2, input#about-3:checked + .about-s .oculus .oculus-nav-dots label#about-dot-3, input#about-4:checked + .about-s .oculus .oculus-nav-dots label#about-dot-4, input#about-5:checked + .about-s .oculus .oculus-nav-dots label#about-dot-5, input#about-6:checked + .about-s .oculus .oculus-nav-dots label#about-dot-6, input#about-7:checked + .about-s .oculus .oculus-nav-dots label#about-dot-7, input#about-8:checked + .about-s .oculus .oculus-nav-dots label#about-dot-8, input#about-9:checked + .about-s .oculus .oculus-nav-dots label#about-dot-9, input#about-10:checked + .about-s .oculus .oculus-nav-dots label#about-dot-10, input#about-11:checked + .about-s .oculus .oculus-nav-dots label#about-dot-11, input#about-12:checked + .about-s .oculus .oculus-nav-dots label#about-dot-12, input#about-13:checked + .about-s .oculus .oculus-nav-dots label#about-dot-13 {
   background: rgba(0, 0, 0, 0.8); }
 
 /*section*motd**********************************************************************************************************/
@@ -755,4 +784,4 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
   background-color: transparent;
   background-image: none; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=home.css.map */

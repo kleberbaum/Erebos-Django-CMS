@@ -128,7 +128,7 @@ article input {
   justify-content: center;
   align-items: center;
   border-color: transparent;
-  //background-color: $about-tc;
+  background-color: $about-tc;
   user-select: none;
 	background-image: url(https://erebos.xyz/PIC/grid16.png);
 	*{
@@ -242,7 +242,7 @@ article input {
 }
 
 input {
-  &#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, &#about-2:checked + .about-s .oculus .oculus-nav-dots label#about-dot-2, &#about-3:checked + .about-s .oculus .oculus-nav-dots label#about-dot-3, &#about-4:checked + .about-s .oculus .oculus-nav-dots label#about-dot-4, &#about-5:checked + .about-s .oculus .oculus-nav-dots label#about-dot-5, &#about-6:checked + .about-s .oculus .oculus-nav-dots label#about-dot-6 {
+  &#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, &#about-2:checked + .about-s .oculus .oculus-nav-dots label#about-dot-2, &#about-3:checked + .about-s .oculus .oculus-nav-dots label#about-dot-3, &#about-4:checked + .about-s .oculus .oculus-nav-dots label#about-dot-4, &#about-5:checked + .about-s .oculus .oculus-nav-dots label#about-dot-5, &#about-6:checked + .about-s .oculus .oculus-nav-dots label#about-dot-6, &#about-7:checked + .about-s .oculus .oculus-nav-dots label#about-dot-7, &#about-8:checked + .about-s .oculus .oculus-nav-dots label#about-dot-8, &#about-9:checked + .about-s .oculus .oculus-nav-dots label#about-dot-9, &#about-10:checked + .about-s .oculus .oculus-nav-dots label#about-dot-10, &#about-11:checked + .about-s .oculus .oculus-nav-dots label#about-dot-11, &#about-12:checked + .about-s .oculus .oculus-nav-dots label#about-dot-12, &#about-13:checked + .about-s .oculus .oculus-nav-dots label#about-dot-13 {
     background: rgba(0, 0, 0, 0.8);
   }
 }

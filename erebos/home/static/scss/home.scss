@@ -1,6 +1,8 @@
 /*var********************************************************************************************************************/
 
 $navtop: calc(32.1px + 1em);
+$full-c: rgba(0, 0, 0, 0.63);
+$full-h: calc(100vh - 32.1px - 1em);
 $banner-c: rgba(255, 255, 255, 0.9);
 $about-c: rgba(0, 0, 0, 0.63);
 $about-bc: rgb(222, 222, 222);
@@ -34,6 +36,7 @@ $about-min-h: 750px;
     }
   }
 }
+
 /*font*******************************************************************************************************************/
 
 h1
@@ -49,10 +52,15 @@ h1
 h2 {
   font-family: "Noto Sans";
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 4em;
+  // font-size: 1.8em;
   letter-spacing: 0.6em;
   padding-left: 0.6em;
   color: white;
+  background: url(https://erebos.xyz/PIC/kreide.png);
+  background-size: 21px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -63,6 +71,10 @@ h3 {
 
 h4 {
 
+}
+
+h5{
+  
 }
 
 a {
