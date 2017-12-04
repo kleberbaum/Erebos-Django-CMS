@@ -7,18 +7,18 @@
     transform: rotateX(90deg);
     height: 0px;
     animation: displaynone 700ms ease-in-out forwards 1400ms; }
-    article:not(.about) section:not(.animatedBackground) {
-      opacity: 0;
-      animation: fadein 700ms ease-in-out forwards 2100ms; }
+  article:not(.about) section:not(.animatedBackground) {
+    opacity: 0;
+    animation: fadein 700ms ease-in-out forwards 2100ms; }
   footer {
     transform-origin: top;
     height: 0px;
     transform: rotateX(90deg);
     opacity: 0;
     animation: displaynone 700ms ease-in forwards 1400ms; }
-    footer * {
-      opacity: 0;
-      animation: fadein 700ms ease-in-out forwards 2100ms; } }
+  footer * {
+    opacity: 0;
+    animation: fadein 700ms ease-in-out forwards 2100ms; } }
 
 /*font*******************************************************************************************************************/
 h1 {
@@ -42,9 +42,29 @@ h2 {
   -webkit-text-fill-color: transparent; }
 
 h3 {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  font-size: 1.8em;
+  letter-spacing: 0.6em;
+  padding-left: 0.6em;
+  color: white;
+  background: url(https://erebos.xyz/PIC/kreide.png);
+  background-size: 21px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+h4 {
   font-size: 1.2em;
   font-family: "Noto Sans";
   color: black; }
+
+h5 {
+  display: block;
+  font-size: 1em;
+  margin-bottom: .33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
 
 a {
   text-decoration: none;
@@ -183,18 +203,18 @@ footer {
     position: fixed;
     transform-origin: top;
     animation: displaynone 700ms ease-in-out; }
-    .navtop a {
-      opacity: 0;
-      animation: fadein 700ms ease-in-out forwards 700ms; }
+  .navtop a {
+    opacity: 0;
+    animation: fadein 700ms ease-in-out forwards 700ms; }
   .banner {
     transform-origin: top;
     transform: rotateX(90deg);
     animation: displaynone 700ms ease-in-out forwards 700ms; }
-    .banner .b {
-      display: flex; }
-    .banner * {
-      opacity: 0;
-      animation: fadein 700ms ease-in-out forwards 1400ms; } }
+  .banner .b {
+    display: flex; }
+  .banner * {
+    opacity: 0;
+    animation: fadein 700ms ease-in-out forwards 1400ms; } }
 
 .site-header {
   flex-direction: column;
@@ -213,28 +233,28 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: black; }
-  .navtop ul {
-    display: flex; }
-  .navtop ul.level-1 li {
-    background-image: url(https://erebos.xyz/PIC/gg.gif);
-    list-style: none; }
-    .navtop ul.level-1 li:hover {
-      background-color: rgba(0, 0, 0, 0.5); }
-    .navtop ul.level-1 li:hover > ul.level-2 {
-      visibility: visible; }
-    .navtop ul.level-1 li a {
-      display: block;
-      width: 200px;
-      text-align: center;
-      padding: 13px 34px 13px 34px;
-      text-decoration: none;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5); }
-    .navtop ul.level-1 li ul.level-2 {
-      z-index: 1;
-      flex-direction: column;
-      position: absolute;
-      visibility: hidden; }
+.navtop ul {
+  display: flex; }
+.navtop ul.level-1 li {
+  background-image: url(https://erebos.xyz/PIC/gg.gif);
+  list-style: none; }
+.navtop ul.level-1 li:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+.navtop ul.level-1 li:hover > ul.level-2 {
+  visibility: visible; }
+.navtop ul.level-1 li a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 13px 34px 13px 34px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); }
+.navtop ul.level-1 li ul.level-2 {
+  z-index: 1;
+  flex-direction: column;
+  position: absolute;
+  visibility: hidden; }
 
 .banner {
   position: relative;
@@ -248,7 +268,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.9); }
 
 .b {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
@@ -263,19 +282,18 @@ footer {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.63); }
-  .full .titlecontainer {
-    margin-bottom: calc(32.1px + 1em); }
+.full .titlecontainer {
+  margin-bottom: 20vh; }
 
 .f {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
   height: 100%; }
-  .f .eule {
-    margin-top: 150px; }
-  .f .kroko {
-    margin-top: 390px; }
+.f .eule {
+  margin-top: 150px; }
+.f .kroko {
+  margin-top: 390px; }
 
 .creativetitlecontainer {
   z-index: 0;
@@ -291,14 +309,15 @@ footer {
 
 .titlecontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-width: 170px;
-  max-width: 220px;
-  min-height: 170px;
-  max-height: 220px;
-  width: 14vw;
-  height: 14vw; }
+  align-items: center; }
+
+.titlespacer {
+  height: 1px;
+  width: 600px;
+  background: url(https://erebos.xyz/PIC/kreide.png);
+  background-size: 21px; }
 
 #Izaya {
   width: 362px;
@@ -316,14 +335,14 @@ footer {
 @media only screen and (max-width: 1440px) {
   .boxes {
     order: 2; }
-    .boxes .box {
-      min-height: 300px; }
-      .boxes .box:nth-child(2) {
-        animation: rollleft 500ms ease-out forwards; }
-      .boxes .box:nth-child(3) {
-        animation: rollleft 500ms ease-out forwards 100ms; }
-      .boxes .box:nth-child(4) {
-        animation: rollleft 500ms ease-out forwards 200ms; }
+  .boxes .box {
+    min-height: 300px; }
+  .boxes .box:nth-child(2) {
+    animation: rollleft 500ms ease-out forwards; }
+  .boxes .box:nth-child(3) {
+    animation: rollleft 500ms ease-out forwards 100ms; }
+  .boxes .box:nth-child(4) {
+    animation: rollleft 500ms ease-out forwards 200ms; }
   .triangulum {
     order: 1;
     max-height: 750px;
@@ -338,12 +357,12 @@ footer {
     flex-direction: column;
     border: solid;
     border-width: 100px 30px; }
-    .boxes .box:nth-child(2) {
-      animation: rolldown 500ms ease-out forwards; }
-    .boxes .box:nth-child(3) {
-      animation: rolldown 500ms ease-out forwards 100ms; }
-    .boxes .box:nth-child(4) {
-      animation: rolldown 500ms ease-out forwards 200ms; }
+  .boxes .box:nth-child(2) {
+    animation: rolldown 500ms ease-out forwards; }
+  .boxes .box:nth-child(3) {
+    animation: rolldown 500ms ease-out forwards 100ms; }
+  .boxes .box:nth-child(4) {
+    animation: rolldown 500ms ease-out forwards 200ms; }
   .triangulum {
     order: 2;
     max-width: 50%; }
@@ -378,7 +397,10 @@ article input {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 0px; }
+  padding: 10px 0px;
+  background-color: rgba(168, 0, 0, 0.63);
+  border-color: #2a2a2a;
+  background-image: url(https://erebos.xyz/PIC/grid2.png); }
 
 .box-title {
   width: calc(100% - 40px);
@@ -388,8 +410,8 @@ article input {
   background-color: #ffffff;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
   animation: rolldown 500ms ease-out forwards; }
-  .box-title * {
-    animation: fadein 700ms ease-in-out forwards; }
+.box-title * {
+  animation: fadein 700ms ease-in-out forwards; }
 
 .box {
   flex: 1;
@@ -397,8 +419,8 @@ article input {
   padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25); }
-  .box * {
-    animation: fadein 700ms ease-in-out forwards; }
+.box * {
+  animation: fadein 700ms ease-in-out forwards; }
 
 .triangulum {
   flex: 2;
@@ -408,15 +430,15 @@ article input {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-color: transparent;
-  background-color: #dedede;
+  background-color: rgba(6, 85, 177, 0.63);
   user-select: none;
-  background-image: url(https://erebos.xyz/PIC/grid16.png); }
-  .triangulum * {
-    user-select: none;
-    -moz-user-select: none; }
+  background-image: url(https://erebos.xyz/PIC/grid2.png); }
+.triangulum * {
+  user-select: none;
+  -moz-user-select: none; }
 
 .oculus-blink {
+  z-index: 99;
   position: absolute;
   top: 44%;
   left: 23.5%;
@@ -437,7 +459,8 @@ article input {
   position: relative;
   width: 800px;
   height: 700px;
-  border: solid #000000 5px; }
+  border: solid white 5px;
+  background-color: rgba(255, 255, 255, 0.17); }
 
 .oculus-nav {
   position: absolute;
@@ -448,20 +471,24 @@ article input {
   filter: blur(0px);
   width: 10%;
   height: 100%; }
-  .oculus-nav:hover {
-    transform: scale(1.05); }
+.oculus-nav:hover {
+  transform: scale(1.05); }
+.oculus-nav img {
+  -webkit-filter: invert(100%);
+  /* Safari */
+  filter: invert(100%); }
 
 .prev {
   top: 0px;
   left: 0px; }
-  .prev:hover {
-    box-shadow: inset 20px 0px 30px 0px #FFFFFF; }
+.prev:hover {
+  box-shadow: inset 20px 0px 30px 0px #FFFFFF; }
 
 .next {
   top: 0px;
   right: 0px; }
-  .next:hover {
-    box-shadow: inset -15px 0px 25px 0px #FFFFFF; }
+.next:hover {
+  box-shadow: inset -15px 0px 25px 0px #FFFFFF; }
 
 .prev img {
   position: absolute;
@@ -492,18 +519,18 @@ article input {
   opacity: 1;
   animation-name: fadein;
   animation-duration: .7s; }
-  .oculus-nav-dots .oculus-nav-dot {
-    width: 11px;
-    height: 11px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 100%;
-    display: inline-flex;
-    background-color: #ffffff;
-    border: 1px solid #000000; }
-    .oculus-nav-dots .oculus-nav-dot:hover {
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.8); }
+.oculus-nav-dots .oculus-nav-dot {
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-flex;
+  background-color: #ffffff;
+  border: 1px solid #000000; }
+.oculus-nav-dots .oculus-nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8); }
 
 input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, input#about-2:checked + .about-s .oculus .oculus-nav-dots label#about-dot-2, input#about-3:checked + .about-s .oculus .oculus-nav-dots label#about-dot-3, input#about-4:checked + .about-s .oculus .oculus-nav-dots label#about-dot-4, input#about-5:checked + .about-s .oculus .oculus-nav-dots label#about-dot-5, input#about-6:checked + .about-s .oculus .oculus-nav-dots label#about-dot-6, input#about-7:checked + .about-s .oculus .oculus-nav-dots label#about-dot-7, input#about-8:checked + .about-s .oculus .oculus-nav-dots label#about-dot-8, input#about-9:checked + .about-s .oculus .oculus-nav-dots label#about-dot-9, input#about-10:checked + .about-s .oculus .oculus-nav-dots label#about-dot-10, input#about-11:checked + .about-s .oculus .oculus-nav-dots label#about-dot-11, input#about-12:checked + .about-s .oculus .oculus-nav-dots label#about-dot-12, input#about-13:checked + .about-s .oculus .oculus-nav-dots label#about-dot-13 {
   background: rgba(0, 0, 0, 0.8); }
@@ -593,8 +620,8 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
   left: 0px;
   width: 100%;
   height: 100%; }
-  .mitsudomoe img:hover {
-    animation: rotate 700ms ease-in-out forwards; }
+.mitsudomoe img:hover {
+  animation: rotate 700ms ease-in-out forwards; }
 
 .lorem {
   position: relative;
@@ -626,64 +653,65 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
 /*section*theteam-s*********************************************************************************************************/
 .theteam-s {
   background-color: #00397b; }
-  .theteam-s .members {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: calc(100vh - 320px); }
-    .theteam-s .members .member {
-      display: flex;
-      flex-direction: column;
-      flex: 0.1;
-      min-width: 100px; }
-      .theteam-s .members .member .pic {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .theteam-s .members .member .pic img {
-          width: 100%;
-          height: auto;
-          border-radius: 100%; }
-      .theteam-s .members .member .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
-  .theteam-s .thunder {
-    position: absolute;
-    bottom: 95px;
-    right: 270px; }
-  .theteam-s .pony {
-    z-index: -1;
-    position: absolute;
-    height: 200px;
-    width: auto;
-    bottom: 0px;
-    right: 0px; }
+.theteam-s .members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: calc(100vh - 320px); }
+.theteam-s .members .member {
+  display: flex;
+  flex-direction: column;
+  flex: 0.1;
+  min-width: 100px; }
+.theteam-s .members .member .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.theteam-s .members .member .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%; }
+.theteam-s .members .member .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+.theteam-s .thunder {
+  position: absolute;
+  bottom: 95px;
+  right: 270px; }
+.theteam-s .pony {
+  z-index: -1;
+  position: absolute;
+  height: 200px;
+  width: auto;
+  bottom: 0px;
+  right: 0px; }
 
 /*section*nyan-s*********************************************************************************************************/
 .nyan {
   min-height: 320px;
   background-attachment: fixed;
   background-image: url(https://erebos.xyz/PIC/m33.png); }
-  .nyan a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 320px; }
-    .nyan a h2 {
-      z-index: 1; }
-    .nyan a img {
-      position: absolute;
-      height: 160px;
-      top: 80px;
-      right: 80px; }
+.nyan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 320px; }
+.nyan a h2 {
+  z-index: 1; }
+.nyan a img {
+  position: absolute;
+  height: 160px;
+  top: 80px;
+  right: 80px; }
 
 .nyanlink {
-  background-color: rgba(6, 85, 177, 0.63); }
+  background-color: rgba(6, 85, 177, 0.63);
+  background-image: url(https://erebos.xyz/PIC/grid2.png); }
 
 .nyan-background {
   animation: nyan-background 1000ms linear infinite; }
@@ -720,17 +748,17 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
   position: relative;
   min-height: 500px;
   background-color: rgba(0, 0, 0, 0.63); }
-  .spaceship-s div {
-    width: calc(100vw - 50px);
-    height: 400px; }
-    .spaceship-s div img {
-      position: absolute;
-      top: 195px;
-      right: calc(50% - 25px); }
-    .spaceship-s div:hover {
-      cursor: url(https://erebos.xyz/PIC/spaceship1.png) 25 55, auto; }
-      .spaceship-s div:hover img {
-        display: none; }
+.spaceship-s div {
+  width: calc(100vw - 50px);
+  height: 400px; }
+.spaceship-s div img {
+  position: absolute;
+  top: 195px;
+  right: calc(50% - 25px); }
+.spaceship-s div:hover {
+  cursor: url(https://erebos.xyz/PIC/spaceship1.png) 25 55, auto; }
+.spaceship-s div:hover img {
+  display: none; }
 
 /*section*about-s*boom.js*A.P*************************************************************************************************/
 @media only screen and (min-width: 1441px) {
@@ -773,12 +801,12 @@ input#about-1:checked + .about-s .oculus .oculus-nav-dots label#about-dot-1, inp
   position: absolute;
   display: flex;
   background-color: transparent; }
-  .oldabout .boxes {
-    display: none; }
-  .oldabout .triangulum {
-    top: 0px;
-    right: 0px;
-    animation: fadeout 700ms ease-in-out forwards; }
+.oldabout .boxes {
+  display: none; }
+.oldabout .triangulum {
+  top: 0px;
+  right: 0px;
+  animation: fadeout 700ms ease-in-out forwards; }
 
 .party {
   background-color: transparent;

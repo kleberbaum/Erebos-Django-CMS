@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1440px) {
-	.navtop {
+  .navtop {
     position: absolute;
   }
 
@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 1440px) {
   .navtop {
-		position: fixed;
+    position: fixed;
     transform-origin: top;
     animation: displaynone 700ms ease-in-out;
     a {
@@ -97,7 +97,6 @@
 }
 
 .b {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
@@ -114,12 +113,11 @@
   width: 100%;
   background-color: $full-c;
   .titlecontainer {
-    margin-bottom: $navtop;
+    margin-bottom: 20vh;
   }
 }
 
 .f {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
@@ -148,14 +146,16 @@
 
 .titlecontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 170px;
-  max-width: 220px;
-  min-height: 170px;
-  max-height: 220px;
-  width: 14vw;
-  height: 14vw;
+}
+
+.titlespacer {
+  height: 1px;
+  width: 600px;
+  background: url(https://erebos.xyz/PIC/kreide.png);
+  background-size: 21px;
 }
 
 #Izaya {

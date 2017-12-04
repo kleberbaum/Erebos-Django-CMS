@@ -2,7 +2,7 @@ $(function() {
 
 	try {
 		//check if js is on
-		if(js){
+		if(false){
 			bg_color();
 			$(window).scroll(bg_color);
 		}
