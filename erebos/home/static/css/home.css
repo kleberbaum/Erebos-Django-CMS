@@ -282,6 +282,9 @@ footer {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.63); }
+.full {
+    opacity: 0;
+    animation: fadein 700ms ease-in-out forwards 1400ms; }
 .full .titlecontainer {
   margin-bottom: 20vh; }
 
